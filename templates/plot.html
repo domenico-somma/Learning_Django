@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}My amazing blog{% endblock %}
+
+{% block content %}
+    <h2>{{text}}</h2>
+    {% load static %}
+    <img src="{% static "pages/plot.png" %}" alt="image">
+{% endblock %}
